@@ -57,7 +57,7 @@ const Threaded = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-slate-900 text-lg">{feature.title}</h3>
-                    <p className="text-slate-600 leading-relaxed">{feature.desc}</p>
+                    
                   </div>
                 </div>
               ))}
@@ -67,9 +67,7 @@ const Threaded = () => {
                <button className="px-8 py-3 rounded font-bold text-white bg-[#D71920] hover:shadow-xl transition-all transform hover:-translate-y-1 flex items-center gap-2">
                  Request Quote <ArrowRight size={18} />
                </button>
-               <button className="px-8 py-3 rounded font-bold text-[#0F172A] border-2 border-[#0F172A] hover:bg-[#0F172A] hover:text-white transition-all">
-                 Download Catalog
-               </button>
+               
             </div>
           </div>
         </div>

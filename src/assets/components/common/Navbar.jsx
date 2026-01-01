@@ -71,8 +71,10 @@ const Navbar = () => {
     {
       category: "Pipes & Tubes",
       subcategories: [
-        "Seamless Pipes", "Welded Pipes", "Heat Exchanger Tubes", 
-        "Instrumentation Tubes", "Square & Rectangular Pipes"
+        "Stainless Steel Pipes", "Carbon Steel Pipes", "Hastelloy Pipes", 
+        "Incoloy Pipe", "Monel Pipe", "Titanium Pipe", "Tantalum Pipe", "Aluminium Pipe", "Duplex Steel/ Superduplex Steel Pipe", ". Nickel Pipe",
+        "Alloy Steel Pipes", "Mild Steel Pipes", "Mild Steel Pipes", "Brass Pipes",
+        
       ]
     },
     {
