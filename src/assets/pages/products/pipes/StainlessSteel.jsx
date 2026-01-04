@@ -130,7 +130,8 @@ const StainlessSteel = () => {
                         { label: "UNSPSC Code", value: "UNSPSC Code 40171621 (Industrial welded stainless steel pipe); 40171622 (Industrial seamless stainless steel pipe)" },
                         { label: "Quality Assurance", value: "They are visually examined for conformity to ASTM, ASME, MSS, DIN, EN, and JIS codes and standards. Upon request, official certified Inspection Agencies can be called in to witness the material reports, dimensions and quality conformity of products." },
                         { label: "Value Added Services", value: "Stainless Steel Pipe Polishing, Stainless Steel Pipe Beveling, Stainless Steel Pipe Honing & Turning, Heat treating & Annealing, Positive Material Identification (PMI)" },
-                        { label: "Test Certificates", value: "Manufacturer Test Certificate as per EN 10204 / 3.1B, Raw Materials Certificate, 100% Radiography Test Report, Third Party Inspection Report" }
+                        { label: "Test Certificates", value: "Manufacturer Test Certificate as per EN 10204 / 3.1B, Raw Materials Certificate, 100% Radiography Test Report, Third Party Inspection Report" },
+                        { label: "Keywords", value: "Austenitic Stainless Steel - Cold Working - Corrosive Service Applications - Forming - High-Temperature Service Applications - High-Temperature Services - Seamless Pipes And Tubes - Seamless Steel Pipes - Stainless Steel Pipes - Tubular Products - EFW Pipes And Tubes - Welded Steel Pipes" }
                       ].map((row, idx) => (
                         <tr key={idx} className={`border-b border-slate-200 ${idx % 2 === 0 ? 'bg-slate-50' : 'bg-white'}`}>
                           <td className="px-6 py-4 font-bold text-[#0F172A] w-1/3 align-top border-r border-slate-200">
@@ -175,7 +176,17 @@ const StainlessSteel = () => {
                           { el: 'Nickel', vals: ['6.0/8.0','8.0/10','8.0/12','8.0/12','12/15','12/15','19/22','10/14','10/14','9.0/12','9/13'] },
                           { el: 'Molybdenum', vals: ['-','-','-','-','-','-','-','2.0/3.0','2.0/3.0','-','-'] },
                           { el: 'Phosphorus', vals: ['0.045','0.20','0.045','0.045','0.045','0.045','0.045','0.045','0.045','0.045','0.045'] },
-                          { el: 'Sulphur', vals: ['0.03','0.15MIN','0.03','0.03','0.03','0.03','0.03','0.03','0.03','0.03','0.03'] }
+                          { el: 'Nitrogen', vals: ['-','-','-','-','-','-','-','-','-','-','-'] },
+                          { el: 'Sulphur', vals: ['0.03','0.15MIN','0.03','0.03','0.03','0.03','0.03','0.03','0.03','0.03','0.03'] },
+                          { el: 'Selenium', vals: ['-','-','-','-','-','-','-','-','-','-','-'] },
+                          { el: 'Aluminium', vals: ['-','-','-','-','-','-','-','-','-','-','-'] },
+                          { el: 'Titanium', vals: ['-','-','-','-','-','-','-','-','-','5XC','-'] },
+                          { el: 'Cb+Ta', vals: ['-','-','-','-','-','-','-','-','-','-','10XC'] },
+                          { el: 'Tensile Strength', vals: ['110','90','85','60','90','90','95','85','78','87','92'] },
+                          { el: '2% Yield Strength', vals: ['40','35','35','30','40','40','40','35','30','35','35'] },
+                          { el: 'Elongation in 2"', vals: ['60','50','55','55','45','45','45','55','55','55','50'] },
+                          { el: 'Rockwell', vals: ['85','84','80','76','85','85','87','80','76','80','84'] },
+                          { el: 'Brinell', vals: ['165','160','150','140','165','165','170','150','145','150','160'] }
                         ].map((row, idx) => (
                           <tr key={idx} className={`border-b border-slate-200 ${idx % 2 === 0 ? 'bg-white' : 'bg-slate-50'}`}>
                             <td className="px-2 py-2 font-bold text-[#D71920] border-r border-slate-200">{row.el}</td>
@@ -213,6 +224,14 @@ const StainlessSteel = () => {
                           { prop: 'Mild water', vals: ['X','X','X','X','X','X','X','X','X','X','X'] },
                           { prop: 'Industrial', vals: ['X','X','X','X','X','X','X','X','X','X','X'] },
                           { prop: 'Marine', vals: ['X','X','X','X','X','X','X','X','X','X','X'] },
+                          { prop: 'Salt Water', vals: ['-','-','-','-','-','-','X','X','-','-','-'] },
+                          { prop: 'Mild', vals: ['X','X','X','X','X','X','X','X','X','X','X'] },
+                          { prop: 'Oxidising', vals: ['X','X','X','X','X','X','X','X','X','X','X'] },
+                          { prop: 'Reducing', vals: ['-','-','-','-','-','-','-','X','X','-','-'] },
+                          { prop: 'Abrasion Resistance', vals: ['Good','Good','Good','Good','Good','Good','Good','Good','Good','Good','Good'] },
+                          { prop: 'Cold Forming', vals: ['Good','Excel','Excel','Good','Good','Good','Good','Good','Good','Good','Good'] },
+                          { prop: 'Weldability', vals: ['Excel','Excel','Excel','Excel','Good','Excel','Excel','Excel','Excel','Excel','Excel'] },
+                          { prop: 'Melting Flange', vals: ['-','1400 1450','1370 1400','-','-','-','-','-','-','-','-'] },
                           { prop: 'Scaling Temp', vals: ['800','900','900','900','1100','1100','1100','900','900','900','900'] }
                         ].map((row, idx) => (
                           <tr key={idx} className={`border-b border-slate-200 ${idx % 2 === 0 ? 'bg-white' : 'bg-slate-50'}`}>
@@ -249,19 +268,24 @@ const StainlessSteel = () => {
                           <th className="px-4 py-3">Yield (ksi) min</th>
                           <th className="px-4 py-3">Elongation min</th>
                           <th className="px-4 py-3">Hardness (Brinell) max</th>
+                          <th className="px-4 py-3">Hardness (Rockwell B) max</th>
                         </tr>
                       </thead>
                       <tbody>
                         {[
-                          { type: '302', uns: 'S30200', t: '75', y: '30', e: '40% in 2"', h: '183' },
-                          { type: '304*', uns: 'S30400', t: '75', y: '30', e: '40% in 2"', h: '183' },
-                          { type: '304L*', uns: 'S30403', t: '70', y: '30', e: '40% in 2"', h: '183' },
-                          { type: '309', uns: 'S30900', t: '75', y: '30', e: '40% in 2"', h: '217' },
-                          { type: '310', uns: 'S31000', t: '75', y: '30', e: '40% in 2"', h: '217' },
-                          { type: '316*', uns: 'S31600', t: '75', y: '30', e: '40% in 2"', h: '217' },
-                          { type: '316L*', uns: 'S31603', t: '70', y: '25', e: '35% in 2"', h: '217' },
-                          { type: '321', uns: 'S32100', t: '75', y: '30', e: '40% in 2"', h: '183' },
-                          { type: '347', uns: 'S34700', t: '75', y: '30', e: '40% in 2"', h: '183' }
+                          { type: '302', uns: 'S30200', t: '75', y: '30', e: '40% in 2"', h: '183', hr: '88' },
+                          { type: '304*', uns: 'S30400', t: '75', y: '30', e: '40% in 2"', h: '183', hr: '88' },
+                          { type: '304L*', uns: 'S30403', t: '70', y: '30', e: '40% in 2"', h: '183', hr: '88' },
+                          { type: '309', uns: 'S30900', t: '75', y: '30', e: '40% in 2"', h: '217', hr: '95' },
+                          { type: '309S', uns: 'S30908', t: '75', y: '30', e: '40% in 2"', h: '217', hr: '95' },
+                          { type: '310', uns: 'S31000', t: '75', y: '30', e: '40% in 2"', h: '217', hr: '95' },
+                          { type: '310S', uns: 'S31008', t: '75', y: '30', e: '40% in 2"', h: '217', hr: '95' },
+                          { type: '316*', uns: 'S31600', t: '75', y: '30', e: '40% in 2"', h: '217', hr: '95' },
+                          { type: '316L*', uns: 'S31603', t: '70', y: '25', e: '35% in 2"', h: '217', hr: '95' },
+                          { type: '317', uns: 'S31700', t: '75', y: '30', e: '35% in 2"', h: '217', hr: '95' },
+                          { type: '317L', uns: 'S31703', t: '75', y: '30', e: '35% in 2"', h: '217', hr: '95' },
+                          { type: '321', uns: 'S32100', t: '75', y: '30', e: '40% in 2"', h: '183', hr: '88' },
+                          { type: '347', uns: 'S34700', t: '75', y: '30', e: '40% in 2"', h: '183', hr: '88' }
                         ].map((row, idx) => (
                           <tr key={idx} className={`border-b border-slate-200 ${idx % 2 === 0 ? 'bg-white' : 'bg-slate-50'}`}>
                             <td className="px-4 py-2 font-bold text-[#D71920]">{row.type}</td>
@@ -270,6 +294,7 @@ const StainlessSteel = () => {
                             <td className="px-4 py-2">{row.y}</td>
                             <td className="px-4 py-2">{row.e}</td>
                             <td className="px-4 py-2">{row.h}</td>
+                            <td className="px-4 py-2">{row.hr}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -292,15 +317,17 @@ const StainlessSteel = () => {
                           <th className="px-4 py-3">Yield (ksi) min</th>
                           <th className="px-4 py-3">Elongation min</th>
                           <th className="px-4 py-3">Hardness (Brinell) max</th>
+                          <th className="px-4 py-3">Hardness (Rockwell B) max</th>
                         </tr>
                       </thead>
                       <tbody>
                         {[
-                          { type: '410*', uns: 'S41000', t: '65', y: '30', e: '20% in 2"', h: '217' },
-                          { type: '410S', uns: 'S41008', t: '60', y: '30', e: '22% in 2"', h: '183' },
-                          { type: '416', uns: 'S41600', t: '75', y: '40', e: '30-25% in 2"', h: '-' },
-                          { type: '420', uns: 'S42000', t: '95', y: '60', e: '30-25% in 2"', h: '-' },
-                          { type: '430', uns: 'S43000', t: '65', y: '30', e: '22% in 2"', h: '183' }
+                          { type: '410*', uns: 'S41000', t: '65', y: '30', e: '20% in 2"', h: '217', hr: '95' },
+                          { type: '410S', uns: 'S41008', t: '60', y: '30', e: '22% in 2"', h: '183', hr: '88' },
+                          { type: '416', uns: 'S41600', t: '75', y: '40', e: '30-25% in 2"', h: '-', hr: '82' },
+                          { type: '420', uns: 'S42000', t: '95', y: '60', e: '30-25% in 2"', h: '-', hr: '92' },
+                          { type: '430', uns: 'S43000', t: '65', y: '30', e: '22% in 2"', h: '183', hr: '88' },
+                          { type: '440C', uns: 'S44004', t: '-', y: '-', e: '-', h: '-', hr: '-' }
                         ].map((row, idx) => (
                           <tr key={idx} className={`border-b border-slate-200 ${idx % 2 === 0 ? 'bg-white' : 'bg-slate-50'}`}>
                             <td className="px-4 py-2 font-bold text-[#D71920]">{row.type}</td>
@@ -309,6 +336,7 @@ const StainlessSteel = () => {
                             <td className="px-4 py-2">{row.y}</td>
                             <td className="px-4 py-2">{row.e}</td>
                             <td className="px-4 py-2">{row.h}</td>
+                            <td className="px-4 py-2">{row.hr}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -330,17 +358,20 @@ const StainlessSteel = () => {
                           <th className="px-4 py-3">Tensile Strength (ksi)</th>
                           <th className="px-4 py-3">Yield Strength (ksi)</th>
                           <th className="px-4 py-3">Elongation in 2" (%)</th>
+                          <th className="px-4 py-3">Rockwell (1) Hardness</th>
                         </tr>
                       </thead>
                       <tbody>
                         {[
-                          { type: '304/304L', temp: 'Annealed', t: '100 max.', y: '25-45', e: '35' },
-                          { type: '310', temp: 'Annealed', t: '100 max.', y: '35-55', e: '35' },
-                          { type: '316/316L', temp: 'Annealed', t: '100 max.', y: '30-50', e: '35' },
-                          { type: '321', temp: 'Annealed', t: '100 max.', y: '35-55', e: '35' },
-                          { type: '347', temp: 'Annealed', t: '100 max.', y: '35-55', e: '35' },
-                          { type: '403/410', temp: 'Annealed', t: '85 max.', y: '30-50', e: '35' },
-                          { type: '430', temp: 'Annealed', t: '85 max.', y: '35-50', e: '35' }
+                          { type: '304 304L', temp: 'Annealed Half Hard Full Hard', t: '100 max. 110-140 140 min.', y: '25-45 70-110 110 min.', e: '35 15 7', h: 'B 90 max. B 93-C 30 C 22 min.' },
+                          { type: '310', temp: 'Annealed Half Hard Full Hard', t: '100 max. 115-135 140 min.', y: '35-55 75-115 115 min.', e: '35 15 5', h: 'B 95 max. B 95-C 26 C 24 min.' },
+                          { type: '316 316L', temp: 'Annealed Half Hard Full Hard', t: '100 max. 110-140 140 min.', y: '30-50 70-110 110 min.', e: '35 15 6', h: 'B 95 max. B 95-C 26 C 24 min.' },
+                          { type: '321', temp: 'Annealed Half Hard Full Hard', t: '100 max. 110-140 140 min.', y: '35-55 80-120 120 min.', e: '35 15 6', h: 'B 92 max. B 95-C 26 C 24 min.' },
+                          { type: '347', temp: 'Annealed Half Hard Full Hard', t: '100 max. 110-140 140 min.', y: '35-55 80-120 120 min.', e: '35 15 6', h: 'B 92 max. B 95-C 26 C 24 min.' },
+                          { type: '403 410', temp: 'Annealed Half Hard Full Hard', t: '85 max. 85-100 100 min.', y: '30-50 65-85 85 min.', e: '35 15 5', h: 'B 95 max. B 90-B 100 C 96 min.' },
+                          { type: '430', temp: 'Annealed Half Hard Full Hard', t: '85 max. 82-97 98 min.', y: '35-50 60-90 85 min.', e: '35 15 5', h: 'B 90 max. B 85-98 C 93 min.' },
+                          { type: '446', temp: 'Annealed Half Hard Full Hard', t: '95 max. 95-115 115 min.', y: '40-75 70-90 85 min.', e: '35 15 4', h: 'B 95 max. B 90-C 24 B 96 min.' },
+                          { type: 'A-286', temp: 'Annealed Half Hard Full Hard', t: '1010 max. 115-140 140 min.', y: '35-65 80-110 110 min.', e: '35 15 3', h: 'B 95 max. B 96-C 26 C 26 min.' }
                         ].map((row, idx) => (
                           <tr key={idx} className={`border-b border-slate-200 ${idx % 2 === 0 ? 'bg-white' : 'bg-slate-50'}`}>
                             <td className="px-4 py-2 font-bold text-[#D71920]">{row.type}</td>
@@ -348,6 +379,7 @@ const StainlessSteel = () => {
                             <td className="px-4 py-2">{row.t}</td>
                             <td className="px-4 py-2">{row.y}</td>
                             <td className="px-4 py-2">{row.e}</td>
+                            <td className="px-4 py-2">{row.h}</td>
                           </tr>
                         ))}
                       </tbody>

@@ -38,7 +38,7 @@ const Navbar = () => {
   // Navigation Links Data
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
+    { name: 'About Us', href: '/about-us' },
     { name: 'Products', href: '/products', hasDropdown: true },
     { name: 'Quality', href: '/quality' },
     { name: 'Tech Info', href: '/tech-info' },
@@ -73,7 +73,7 @@ const Navbar = () => {
       subcategories: [
         "Stainless Steel Pipes", "Carbon Steel Pipes", "Hastelloy Pipes", 
         "Incoloy Pipe", "Monel Pipe", "Titanium Pipe", "Tantalum Pipe", "Aluminium Pipe", "Duplex Steel/ Superduplex Steel Pipe", ". Nickel Pipe",
-        "Alloy Steel Pipes", "Mild Steel Pipes", "Mild Steel Pipes", "Brass Pipes",
+        "Alloy Steel Pipes", "Mild Steel Pipes", "Copper Pipes", "Brass Pipes",
         
       ]
     },
