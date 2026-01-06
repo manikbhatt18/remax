@@ -76,20 +76,20 @@ function App() {
 
 
         
-        <Route path='/products/pipes-tubes/stainless-steel-pipes' element={<StainlessSteel />} />
-        <Route path='/products/pipes-tubes/carbon-steel-pipes' element={<CarbonSteel />} />
-        <Route path='/products/pipes-tubes/hastelloy-pipes' element={<Hastelloy />} />
-        <Route path='/products/pipes-tubes/incoloy-pipe' element={<Incoloy />} />
-        <Route path='/products/pipes-tubes/monel-pipe' element={<Monel />} />
-        <Route path='/products/pipes-tubes/titanium-pipe' element={<Titanium />} />
-        <Route path='/products/pipes-tubes/tantalum-pipe' element={<Tantalum />} />
-        <Route path='/products/pipes-tubes/aluminium-pipe' element={<Aluminium />} />
-        <Route path='/products/pipes-tubes/duplex-steel-superduplex-steel-pipe' element={<Duplex />} />
-        <Route path='/products/pipes-tubes/nickel-pipe' element={<Nickel />} />
-        <Route path='/products/pipes-tubes/alloy-steel-pipes' element={<AlloySteel/>} />
-        <Route path='/products/pipes-tubes/mild-steel-pipes' element={<MildSteel/>} />
-        <Route path='/products/pipes-tubes/copper-pipes' element={<Copper />} />
-        <Route path='/products/pipes-tubes/brass-pipes' element={<Brass />} />
+        <Route path='/products/pipes/stainless-steel-pipes' element={<StainlessSteel />} />
+        <Route path='/products/pipes/carbon-steel-pipes' element={<CarbonSteel />} />
+        <Route path='/products/pipes/hastelloy-pipes' element={<Hastelloy />} />
+        <Route path='/products/pipes/incoloy-pipe' element={<Incoloy />} />
+        <Route path='/products/pipes/monel-pipe' element={<Monel />} />
+        <Route path='/products/pipes/titanium-pipe' element={<Titanium />} />
+        <Route path='/products/pipes/tantalum-pipe' element={<Tantalum />} />
+        <Route path='/products/pipes/aluminium-pipe' element={<Aluminium />} />
+        <Route path='/products/pipes/duplex-steel-superduplex-steel-pipe' element={<Duplex />} />
+        <Route path='/products/pipes/nickel-pipe' element={<Nickel />} />
+        <Route path='/products/pipes/alloy-steel-pipes' element={<AlloySteel/>} />
+        <Route path='/products/pipes/mild-steel-pipes' element={<MildSteel/>} />
+        <Route path='/products/pipes/copper-pipes' element={<Copper />} />
+        <Route path='/products/pipes/brass-pipes' element={<Brass />} />
 
 
 
