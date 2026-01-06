@@ -30,6 +30,22 @@ import AlloySteel from './assets/pages/products/pipes/AlloySteel.jsx'
 import MildSteel from './assets/pages/products/pipes/MildSteel.jsx'
 import Copper from './assets/pages/products/pipes/Copper.jsx'
 import Brass from './assets/pages/products/pipes/Brass.jsx'
+import StainlessSteelTube from './assets/pages/products/tubes/StainlessSteelTube.jsx'
+import CarbonSteelTube from './assets/pages/products/tubes/CarbonSteelTube.jsx'
+import HastelloyTube from './assets/pages/products/tubes/HastelloyTube.jsx'
+import IncoloyTube from './assets/pages/products/tubes/IncoloyTube.jsx'
+import MonelTube from './assets/pages/products/tubes/MonelTube.jsx'
+import TitaniumTube from './assets/pages/products/tubes/TitaniumTube.jsx'
+import TantalumTube from './assets/pages/products/tubes/TantalumTube.jsx'
+import AluminiumTube from './assets/pages/products/tubes/AluminiumTube.jsx'
+import DuplexSteelTube from './assets/pages/products/tubes/DuplexSteelTube.jsx'
+import NickelTube from './assets/pages/products/tubes/NickelTube.jsx'
+import AlloySteelTube from './assets/pages/products/tubes/AlloySteelTube.jsx'
+import CopperTube from './assets/pages/products/tubes/CopperTube.jsx'
+import BrassTube from './assets/pages/products/tubes/BrassTube.jsx'
+import Quality from './assets/pages/Quality.jsx'
+import ChemicalComposition from './assets/pages/tech-info/ChemicalComposition.jsx'
+
 
 
 
@@ -42,6 +58,13 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<ContactUs />} />
         <Route path='/about-us' element={<AboutUs />} />
+        <Route path='/quality' element={<Quality/>} />
+
+
+        <Route path='tech-info/chemical-composition' element={<ChemicalComposition/>} />
+        {/* <Route path='tech-info/mechanical-properties' element={<MechanicalProperties/>} />
+        <Route path='tech-info/weight-chart' element={<WeightChart/>} />
+        <Route path='tech-info/dimensions' element={<DimensionChart/>} /> */}
 
 
 
@@ -67,6 +90,23 @@ function App() {
         <Route path='/products/pipes-tubes/mild-steel-pipes' element={<MildSteel/>} />
         <Route path='/products/pipes-tubes/copper-pipes' element={<Copper />} />
         <Route path='/products/pipes-tubes/brass-pipes' element={<Brass />} />
+
+
+
+        <Route path='/products/tubes/stainless-steel-tubes' element={<StainlessSteelTube />} />
+        <Route path='/products/tubes/carbon-steel-tubes' element={<CarbonSteelTube />} />
+        <Route path='/products/tubes/hastelloy-tubes' element={<HastelloyTube />} />
+        <Route path='/products/tubes/incoloy-tubes' element={<IncoloyTube/>} />
+        <Route path='/products/tubes/monel-tubes' element={<MonelTube />} />
+        <Route path='/products/tubes/titanium-tubes' element={<TitaniumTube />} />
+        <Route path='/products/tubes/hastelloy-tubes' element={<HastelloyTube />} />
+        <Route path='/products/tubes/tantalum-tubes' element={<TantalumTube />} />
+        <Route path='/products/tubes/aluminium-tubes' element={<AluminiumTube />} />
+        <Route path='/products/tubes/duplex-steel-super-duplex-steel-tube' element={<DuplexSteelTube />} />
+        <Route path='/products/tubes/nickel-tube' element={<NickelTube />} />
+        <Route path='/products/tubes/alloy-steel-tube' element={<AlloySteelTube />} />
+        <Route path='/products/tubes/copper-tube' element={<CopperTube />} />
+        <Route path='/products/tubes/brass-tube' element={<BrassTube />} />
 
 
       </Routes>
