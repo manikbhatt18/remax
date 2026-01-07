@@ -45,6 +45,8 @@ import CopperTube from './assets/pages/products/tubes/CopperTube.jsx'
 import BrassTube from './assets/pages/products/tubes/BrassTube.jsx'
 import Quality from './assets/pages/Quality.jsx'
 import ChemicalComposition from './assets/pages/tech-info/ChemicalComposition.jsx'
+import MechanicalProperties from './assets/pages/tech-info/MechanicalProperties.jsx'
+import WeightChart from './assets/pages/tech-info/WeightChart.jsx'
 
 
 
@@ -62,9 +64,9 @@ function App() {
 
 
         <Route path='tech-info/chemical-composition' element={<ChemicalComposition/>} />
-        {/* <Route path='tech-info/mechanical-properties' element={<MechanicalProperties/>} />
+        <Route path='tech-info/mechanical-properties' element={<MechanicalProperties/>} />
         <Route path='tech-info/weight-chart' element={<WeightChart/>} />
-        <Route path='tech-info/dimensions' element={<DimensionChart/>} /> */}
+        {/* <Route path='tech-info/dimensions' element={<DimensionChart/>} /> */}
 
 
 
@@ -107,6 +109,16 @@ function App() {
         <Route path='/products/tubes/alloy-steel-tube' element={<AlloySteelTube />} />
         <Route path='/products/tubes/copper-tube' element={<CopperTube />} />
         <Route path='/products/tubes/brass-tube' element={<BrassTube />} />
+
+
+
+        {/* <Route path='/products/plates/hardox-plate' element={<HardoxPlate/>} />
+        <Route path='/products/plates/corten-steel-plate' element={<CortenSteelPlate/>} />
+        <Route path='/products/plates/boiler-quality-plate' element={<BoilerQualityPlate/>} />
+        <Route path='/products/plates/manganese-plate' element={<ManganesePlate/>} />
+        <Route path='/products/plates/nickel-alloy-plate' element={<NickelAlloyPlate/>} />
+        <Route path='/products/plates/hardox-plate' element={<HardoxPlate/>} />
+        <Route path='/products/plates/hardox-plate' element={<HardoxPlate/>} /> */}
 
 
       </Routes>

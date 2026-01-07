@@ -87,11 +87,24 @@ const Navbar = () => {
       ]
     },
     {
-      category: "Sheets & Plates",
-      subcategories: [
-        "Stainless Steel Sheets", "Carbon Steel Plates", "Mild Steel Plates", "Chequered Plates"
-      ]
-    }
+    category: "Plates",
+    subcategories: [
+      "Hardox Plate",
+      "Corten Steel Plate",
+      "Boiler Quality Plate",
+      "Manganese Plate",
+      "Nickel Alloy Plate",
+      "Chrome Moly Plate",
+      "Pressure Vessel Plate",
+      "Stainless Steel Plate",
+      "Carbon Steel Plate",
+      "Offshore Steel Plate",
+      "Quend Plate",
+      "Quard Plate",
+      "Aluminium Plate",
+      "Chequered Plate"
+    ]
+  }
   ];
 
   const handleMobileCategoryClick = (index) => {
