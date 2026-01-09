@@ -48,6 +48,10 @@ import ChemicalComposition from './assets/pages/tech-info/ChemicalComposition.js
 import MechanicalProperties from './assets/pages/tech-info/MechanicalProperties.jsx'
 import WeightChart from './assets/pages/tech-info/WeightChart.jsx'
 
+import Certification from './assets/pages/Certification.jsx'
+import CareerPage from './assets/pages/Career.jsx'
+import DimensionChart from './assets/pages/tech-info/DimensionChart.jsx'
+
 
 
 
@@ -61,12 +65,15 @@ function App() {
         <Route path='/contact' element={<ContactUs />} />
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/quality' element={<Quality/>} />
+        <Route path='/certification' element={<Certification/>} />
+        <Route path='/career' element={<CareerPage/>} />
+
 
 
         <Route path='tech-info/chemical-composition' element={<ChemicalComposition/>} />
         <Route path='tech-info/mechanical-properties' element={<MechanicalProperties/>} />
         <Route path='tech-info/weight-chart' element={<WeightChart/>} />
-        {/* <Route path='tech-info/dimensions' element={<DimensionChart/>} /> */}
+        <Route path='tech-info/dimensions' element={<DimensionChart/>} />
 
 
 
