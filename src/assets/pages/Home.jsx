@@ -172,11 +172,7 @@ const Home = () => {
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </button>
               
-              <button 
-                className="w-full sm:w-auto px-8 py-4 rounded font-bold text-white border-2 border-white/50 hover:bg-white/10 backdrop-blur-sm transition-all flex items-center justify-center whitespace-nowrap shrink-0 min-w-[160px]"
-              >
-                Contact Us
-              </button>
+              
             </div>
           </div>
         </div>

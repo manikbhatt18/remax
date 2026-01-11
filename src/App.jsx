@@ -51,6 +51,16 @@ import WeightChart from './assets/pages/tech-info/WeightChart.jsx'
 import Certification from './assets/pages/Certification.jsx'
 import CareerPage from './assets/pages/Career.jsx'
 import DimensionChart from './assets/pages/tech-info/DimensionChart.jsx'
+import HardoxPlate from './assets/pages/products/plates/HardoxPlate.jsx'
+import CortenSteelPlate from './assets/pages/products/plates/CortenSteelPlate.jsx'
+import BoilerQualityPlate from './assets/pages/products/plates/BoilerQualityPlate.jsx'
+import ManganesePlate from './assets/pages/products/plates/ManganesePlate.jsx'
+import NickelAlloyPlate from './assets/pages/products/plates/NickelAlloyPlate.jsx'
+import ChromeMolyPlate from './assets/pages/products/plates/ChromeMolyPlate.jsx'
+import PressureVesselPlate from './assets/pages/products/plates/PressureVesselPlate.jsx'
+import StainlessSteelPlate from './assets/pages/products/plates/StainlessSteelPlate.jsx'
+import CarbonSteelPlate from './assets/pages/products/plates/CarbonSteelPlate.jsx'
+import OffshoreSteelPlate from './assets/pages/products/plates/OffshoreSteelPlate.jsx'
 
 
 
@@ -119,13 +129,17 @@ function App() {
 
 
 
-        {/* <Route path='/products/plates/hardox-plate' element={<HardoxPlate/>} />
+        <Route path='/products/plates/hardox-plate' element={<HardoxPlate/>} />
         <Route path='/products/plates/corten-steel-plate' element={<CortenSteelPlate/>} />
         <Route path='/products/plates/boiler-quality-plate' element={<BoilerQualityPlate/>} />
         <Route path='/products/plates/manganese-plate' element={<ManganesePlate/>} />
         <Route path='/products/plates/nickel-alloy-plate' element={<NickelAlloyPlate/>} />
-        <Route path='/products/plates/hardox-plate' element={<HardoxPlate/>} />
-        <Route path='/products/plates/hardox-plate' element={<HardoxPlate/>} /> */}
+        <Route path='/products/plates/chrome-moly-plate' element={<ChromeMolyPlate/>} />
+        <Route path='/products/plates/pressure-vessel-plate' element={<PressureVesselPlate/>} />
+        <Route path='/products/plates/stainless-steel-plate' element={<StainlessSteelPlate/>} />
+        <Route path='/products/plates/carbon-steel-plate' element={<CarbonSteelPlate/>} />
+        <Route path='/products/plates/offshore-steel-plate' element={<OffshoreSteelPlate/>} />
+        <Route path='/products/plates/stainless-steel-plate' element={<StainlessSteelPlate/>} />
 
 
       </Routes>
